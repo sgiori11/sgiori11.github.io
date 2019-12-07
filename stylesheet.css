@@ -315,6 +315,7 @@ h1 {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 1%;
+  margin-bottom: 2%;
 }
 
 /* Creates three equal columns that sit next to each other */
@@ -324,6 +325,7 @@ h1 {
   flex: 25%;
   padding: 0 0.25%;
   justify-content: center;
+  margin-top: 2%;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -385,8 +387,18 @@ h1 {
   color: black;
   text-align: left;
   margin-left: 5%;
+  margin-right: 3%;
+  
 
 } 
+
+.wrap {
+	border-style: solid;
+	border-color: #ededed;
+	border-width: 0.15rem;
+	background-color: #fcfcfc;
+	
+}
 
 .tags {
 
@@ -434,7 +446,7 @@ h1 {
 
 .tag::after {
 
-  background: #fff;
+  background: #fcfcfc;
   border-bottom: 13px solid transparent;
   border-left: 10px solid #eee;
   border-top: 13px solid transparent;
@@ -448,6 +460,11 @@ h1 {
 
   font-size: calc(18px + 0.5vw);
   font-style: bold;
+}
+
+.columntext h3:hover {
+
+	color: #C83C92;
 }
 
 .columntext p {
@@ -492,8 +509,7 @@ h1 {
 
 .footer {
 	padding: 2% 2% 2% 2%;
-	border-top: 0.5px solid;
-	border-color: grey;
+	background-color: #e6e6e6;
 	display: flex; /* keeps linkedin circle even */
 	justify-content: center;
 	align-content: center;
