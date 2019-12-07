@@ -62,7 +62,7 @@ body p {
 
 
 .fa-bars {
-	font-size: calc(16px + 2.5vw);
+	font-size: calc(20px + 2.5vw);
 	top: 0;
 	
 }
@@ -116,7 +116,7 @@ body p {
 	  
 	display: flex;
 	justify-content: center;
-	margin-top: 10vh;
+	margin-top: 12vh;
     width: 100%;
     height: 60vh;
     overflow: auto; 
@@ -230,13 +230,21 @@ h1 {
 
 	75% {
 		opacity: 1;
-		border-bottom-width: 4vh;
-  		border-right-width: 4vh;
+		border-bottom-width: 3vh;
+  		border-right-width: 3vh;
 	}
 
 	100% {
 		opacity: 1 forwards;
 }
+}
+
+@media screen and (max-width: 600px) {
+	.banner {
+
+		margin-left: 5%;
+
+	}
 }
 
 .designpadding {
@@ -254,10 +262,10 @@ h1 {
 	margin-top: 15vh;
 	color: #C83C92;
 	background-color: white;
-	font-size: calc(20px + 3vw);
+	font-size: calc(16px + 4vw);
 	font-weight: 700;
 	border-bottom: solid;
-	border-width: 0.5rem;
+	border-width: 0.3rem;
 	border-color: #21041f;
 	display: flex;
 	text-align: center;
@@ -271,7 +279,7 @@ h1 {
 
 .writingpadding {
 	background-color: white;
-	margin-top: 15%;
+	margin-top: 12%;
 }
 
 .writing {
@@ -282,10 +290,10 @@ h1 {
 
 	color: #C83C92;
 	background-color: white;
-	font-size: calc(20px + 3vw);
+	font-size: calc(16px + 4vw);
 	font-weight: 700;
 	border-bottom: solid;
-	border-width: 0.5rem;
+	border-width: 0.3rem;
 	border-color: #21041f;
 	display: flex;
 	text-align: center;
@@ -380,6 +388,62 @@ h1 {
 
 } 
 
+.tags {
+
+  list-style: none;
+  list-style-type: none;
+  margin-left: 5%;
+  overflow: hidden; 
+  padding: 0;
+}
+
+
+.tags li {
+
+	position: relative;
+	float: left;
+	margin-top: 1%;
+
+}
+
+.tag {
+
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 15px 0 10px;
+  position: relative;
+  margin: 0 10px 2px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+  
+  border-radius: 10px;
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .columntext h3 {
 
   font-size: calc(18px + 0.5vw);
@@ -393,7 +457,6 @@ h1 {
 .about-body {
 
 	background-color: white;
-	font-weight: bold;
 }
 
 
@@ -421,7 +484,7 @@ h1 {
 
 .aboutme {
 
-	margin: 0 5vw 5vh 5vw;
+	margin: 0 5vw 7vh 7vw;
 	display: inline-block;
 	font-size: calc(16px + 0.5vw);
 }
