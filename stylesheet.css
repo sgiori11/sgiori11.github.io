@@ -10,6 +10,7 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+    
 	
 }
 
@@ -70,6 +71,7 @@ body p {
 
 .topnav .icon {
   display: none;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -240,11 +242,9 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-	.banner {
-
-		margin-left: 5%;
-
-	}
+	.banner h1 {margin-left: 5%;}
+	.typewriter p {margin-left: 1%;}
+	
 }
 
 .designpadding {
