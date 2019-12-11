@@ -74,7 +74,7 @@ body p {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
@@ -84,7 +84,7 @@ body p {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .topnav.responsive {position: sticky;
   	top: 0;
   }
@@ -236,7 +236,7 @@ h1 {
 }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 	.banner h1 {margin-left: 5%;}
 	.typewriter p {margin-left: 1%;}
 	
@@ -319,7 +319,7 @@ h1 {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
   padding: 0 0.25%;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 2%;
   margin-left: auto;
   margin-right: auto;
@@ -333,10 +333,10 @@ h1 {
 }
 
 .wrap {
-	border-style: solid;
-	border-color: #ededed;
-	border-width: 0.15rem;
-	background-color: #fcfcfc;
+	border: solid black;
+	border-width: 2px;
+	background-color: white; 
+	padding-bottom: 2%;
 	
 }
 
@@ -357,7 +357,7 @@ h1 {
   .column {
     -ms-flex: 50%;
     flex: 50%;
-    max-width: 50%;
+    max-width: 100%;
   }
 }
 
@@ -367,19 +367,13 @@ h1 {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+    margin-bottom: 10%;
   }
 }
 
-.columnoverlay {
-  transition: .5s ease;
-  opacity: 0;
-  position: relative;
-  justify-content: center;
-
-}
 
 .columnpics:hover {
-	transform: scale(1.05);
+	transform: scale(1.01);
 	opacity: 0.3;
 }
 
@@ -456,7 +450,7 @@ h1 {
 
 .tag::after {
 
-  background: #fcfcfc;
+  background: white;
   border-bottom: 13px solid transparent;
   border-left: 10px solid #eee;
   border-top: 13px solid transparent;
@@ -501,29 +495,195 @@ h1 {
 	font-size: calc(16px + 0.5vw);
 }
 
+@media screen and (max-width: 960px) {
+	.timeline-wrapper {
+		display: none;
+	}
+} 
+
+
 
 .footer {
-	padding: 2% 2% 2% 2%;
-	background-color: #e6e6e6;
-	display: flex; /* keeps linkedin circle even */
-	justify-content: center;
-	align-content: center;
+	padding: 1% 2% 1% 2%;
+	background-color: #f5f5f5;
+	display: block; /* keeps linkedin circle even */
+	text-align: center;
 	text-decoration: none;
 }
 
-
-
-.fourohfour {
-	text-align: center;
-	margin-top: 20%;
-	display: block;
-	font-size: 2em;
-	font-weight: bold;
+.footer a {
+	text-decoration: none;
+	display: inline-block;
+	font-size: calc(12px + 1.5vw);
+	margin: 1% 0.5% 0 0.5%;
 	color: black;
+}
 
+.timeline-wrapper {
+  background-color: white;
+  position: sticky;
+  top: 0;
+} 
+
+ .progress-container {
+  width: 100%;
+  margin-top: 0;
+  height: 6px;
+  background: #f0f0f0;
+}
+
+ .progress-bar {
+  height: 6px;
+  background: #C83C92;
+  width: 0%;
 }
 
 
+.list-items {
+  font-size: 18px;
+  background-color: white;
+}
+
+
+.list-items li {
+  display: inline-block;
+  white-space: nowrap;
+  margin-top: 0;
+}
+
+
+.list-items a:hover {
+  color: #C83C92;
+}
+
+.section {
+  margin-bottom: 50vh;
+}
+
+.list-items a {
+  color: #a9a9a9;
+}
+
+.list-items ul, .list-items a {
+  width: 95%;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-around;
+  margin-bottom: 0.5%;
+}
+
+#overview, #uresearch, #wireframes, #explore, #originaldesign, #finaldesign {
+  padding-top: 15%;
+}
+
+.back-arrow {
+  margin: 5% 0 0 5%;
+  height: calc(10px + 1.5vw);
+  width: calc(10px + 1.5vw); 
+  border-style: solid;
+  border-color: #8F8F8F;
+  border-width: 0 0 0.3em 0.3em;
+  opacity: 0.5;
+  transform: rotate(45deg);
+
+}
+
+.back-arrow a {
+	text-decoration: none;
+	color: white;
+	margin-left: 0;
+}
+
+.back-arrow:hover {
+	border-color: #C83C92;
+	opacity: 1;
+}
+
+.meetup-header {
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: calc(18px + 4vw);
+	font-weight: 300;
+	text-align: center;
+	color: #C83C92;
+    padding-bottom: 1%;
+    margin: 31vh 0 31vh 0;
+}
+
+.center-box {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 7%;
+}
+
+
+.center-box div {
+
+	width: 50%;
+}
+
+.center-box h2, .text h2 {
+
+	font-size: 2rem;
+}
+
+.center-box p, li, .text p, li {
+
+	font-size: 1.15rem;
+}
+
+.balsamiq {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.balsamiq img {
+
+	width: 75%;
+	height: auto;
+	margin-top: 5%;
+	margin-bottom: 5%
+
+}
+
+.flex-container {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2% 2% 2% 2%;
+	
+}
+
+.flex-container img {
+
+	width: 90%;
+	height: auto;
+	
+}
+
+.text {
+	margin: 2% 2% 2% 2%;
+}
+
+.Original {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Original img {
+
+	width: 75%;
+	height: auto;
+	margin-top: 4%;
+	
+}
 
 
 
