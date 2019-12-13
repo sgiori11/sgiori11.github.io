@@ -324,7 +324,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  width: 540em;
+  width: 540px;
 }
 
 .column a{
@@ -340,6 +340,21 @@ h1 {
 	
 }
 
+.norway-pic {
+
+  backface-visibility: hidden;
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+  max-width: 1400px;
+  overflow: hidden;
+
+}
+
+#demo {
+    background: #FFF;
+ }
+
 .columnpics {
   opacity: 1;
   transition: .5s ease;
@@ -348,7 +363,7 @@ h1 {
   vertical-align: middle;
   height: auto;
   width: 100%;
-  max-width: 1400em;
+  max-width: 1400px;
   overflow: hidden;
 }
 
@@ -388,10 +403,16 @@ h1 {
 
 } 
 
+.columntext a {
+	text-decoration: none;
+	color: black;
+}
+
 .columntext h3 {
 
   font-size: calc(18px + 0.5vw);
   font-style: bold;
+
 }
 
 .columntext h3:hover {
