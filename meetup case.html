@@ -1,0 +1,234 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154204180-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154204180-1');
+</script>
+	<script src="https://kit.fontawesome.com/6a6a611a56.js" crossorigin="anonymous"></script>
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stephanie Giori's Portfolio</title> <!--this has to be below the css & font links-->
+ <meta charset="utf-8">
+  <meta name="description" content="">
+</head>
+<body>
+<div class="back-arrow">
+	<a href="index.html" title="Home">Home</a>
+</div>
+<h1 class="meetup-header">Redesigning the Meetup App</h1>
+<div class="timeline-wrapper">
+   <div class="list-items">
+      <ul>
+        <li>
+          <a href="#overview">Overview</a>           
+        </li>
+        <li>
+          <a href="#uresearch">User Research</a>           
+        </li>
+        <li>
+         <a href="#wireframes">Sketches & Wireframes</a>
+        </li>
+        <li>
+         <a href="#mockups">Sketch Mockups</a>
+        </li>
+        <li>
+         <a href="#originaldesign">Original Design</a>
+        </li>
+        <li>
+         <a href="#finaldesign">Final Design</a>            
+        </li>
+        <li>
+         <a href="#reflections">Reflection</a>            
+        </li>
+      </ul>
+      <div class="progress-container">
+       <div class="progress-bar" id="myBar">
+   </div>
+  </div>
+ </div>
+</div>
+
+
+<div class="center-box">
+<div><h2 id="overview">Overview</h2>
+<p>
+	As an immigrant and an avid traveler, I regularly use the Meetup app to find local events and likeminded people. 
+	I decided to redesign the Meetup app to learn more about UX/UI design principles and tools. 
+</p>
+<ul>
+ <li><strong>Product:</strong> Meetup app.</li>
+ <li><strong>Target Audience:</strong> Immigrants, travelers, outgoing locals.</li>
+ <li><strong>Challenge:</strong> Redesign the Home, Explore, and Notification pages.</li>
+ <li><strong>Tools and Materials:</strong> Sketch; Balsamiq; Google; notebook; pencil; pen.</li>
+</ul>
+</div>
+</div>
+
+
+<div class="flex-container">
+	<div><img src="images/reviews.png" alt="A sample of Meetup reviews on the Apple App Store." class="mockup-img"><div class="caption"><p>Some Meetup reviews on the Apple App Store.</p></div></div>
+ <div class="text">
+<h2 id="uresearch">User Research</h2>
+<p>
+   In addition to my gripes with the app, I collected user data from Meetup reviewers on the Apple App Store. 
+</p>
+<p><strong>Common User Complaints & Recommendations:</strong></p>
+<ul>
+ <li>Display the distance to an event instead of (or in addition to) the venue name. Venue names are not very useful for non-locals or users that can’t read the local language.</li> 
+ <li>On the <strong>Explore</strong> page, tapping the <strong>Add</strong><div class="add-svg"><img src="images/Add icon.svg" alt="Add Group icon"></div> icon above an event adds users to the <em>group</em>, not the event. This is unintuitive and frustrating for users, especially because the action cannot be undone.</li> 
+ <li>Add an <strong>Undo</strong> or <strong>Cancel</strong> button after each action so that the user feels in control.</li>
+ <li>On the <strong>Explore</strong> page, the top search bar only searches for events. The search bar for groups is located near the bottom of the page and is easily missed.</li>
+ <li>On the <strong>Home</strong> page, users cannot filter events from groups that they follow.</li>
+</ul>
+</div>
+</div>
+
+<div class="flex-container">
+ <div class="text">
+<h2 id="wireframes">Sketches & Wireframes</h2>
+<p>
+	To address user complaints without compromising aesthetics, I created low-fidelity sketches and wireframes of potential UIs. 
+</p>
+<ul>
+ <li><strong>Number of designs:</strong> 5</li>
+ <li><strong>Key differences:</strong> Calendar vs. no calendar; horizontal vs. vertical scrolling; large vs. small images. </li>
+</ul>
+</div>
+<div><img src="images/sketch.png" alt="One of my pencil sketches." class="mockup-img"><div class="caption"><p>One of my sketches</p></div></div>
+</div>
+
+<div class="balsamiq">
+	<img src="images/Balsamiq.png" alt="Wireframes of the redesign">
+	<p class="caption">Balsamiq wireframes</h2>
+</div>
+
+<div class="center-box">
+<div><h2 id="mockups">UI Mockups</h2>
+<p>
+	After incorporating all of the user recommendations, I started designing the final screens in Sketch. 
+	Since most Meetup reviewers praised the app's UI, I decided to keep my designs as close to the 
+	original UI as possible to leverage the power of familiarity.
+</p>
+<ul>
+ <li><strong>Guidelines:</strong> iOS Human Interface Guidelines; Existing Meetup color palette.</li>
+ <li><strong>Platform:</strong> iOS</li>
+</ul>
+</div>
+</div>
+
+<div class="flex-container">
+ <div class="text">
+<h2>Home Page</h2>
+<p><strong>Changes:</strong></p>
+<ul>
+ <li>Replaced venue names with the distance to each event. Providing the distance to an event is useful for non-locals and people that can’t read the local language.</li>
+ <li>Added a <strong>Filter</strong><div class="add-svg"><img src="images/Filter icon.svg" alt="Filter icon"></div> icon so users can filter events from groups that they follow.</li>
+ <li>Increased the font size of the event date and time so users can quickly orient themselves.</li>
+ <li>To free up white space, I removed <strong>See all groups</strong> and added an arrow next to <strong>Your Groups</strong> for the same functionality.</li>
+ <li>Placed group names below their respective pictures for better visibility and a higher contrast ratio.</li>
+ <li>Replaced <strong>Start group</strong> with a <strong>Create Group</strong><div class="add-svg"><img src="images/Create group.svg" alt="Create Group icon"></div> icon to encourage Meetup users to create groups. Groups are integral to the Meetup experience.</li>
+ <li>Added a thumbnail next to each event so users can quickly identify an event’s host group.</li>
+ <li>Changed <strong>Your Calendar</strong> to <strong>Your Meetups</strong> to incorporate branding and minimize confusion. A calendar is often used to track upcoming events, but people rarely track events that they aren’t attending.</li>
+ <li>Changed the <strong>Save</strong> icon from a star to a heart.</li>
+</ul>
+<p><strong>Potential Problems:</strong></p> 
+<ul>
+ <li>Changing <strong>Your Calendar</strong> to <strong>Your Meetups</strong> might not make sense to every user. 
+ User testing is required to make an informed decision.</li>
+ <li>Replacing the <strong>Save</strong> icon with a heart might not resonate with every user. Hearts are often associated with saving items, but this is not always the case. Icon functionality differs from site to site. Without user testing, it’s impossible to know whether the star or the heart is the better icon.</li>
+</ul>
+</div>
+<div><img src="images/Home zoom.png" alt="Home page mockup" class="mockup-img"><div class="caption"><p>Home Page Mockup</p></div></div>
+</div>
+
+<div class="flex-container">
+	<div><img src="images/Explore full.png" alt="Explore page mockup" class="mockup-img"><div class="caption"><p>Explore Page Mockup</p></div></div>
+ <div class="text">
+<h2 id="explore">Explore Page</h2>
+<p><strong>Changes:</strong></p>
+<ul>
+ <li>Consolidated the event and group search bars into one <strong>Search</strong> bar located at the top of the page.</li>
+ <li>Added a <strong>Cancel</strong><div class="add-svg"><img src="images/Leave icon.svg" alt="Cancel icon"></div> icon so users can easily 
+ remove themselves from groups.</li>
+ <li>Separated groups and events so that the <strong>Add</strong><div class="add-svg"><img src="images/Add icon.svg" alt="Add Group icon"></div> icon was unambiguous.</li>
+ <li>Increased the font size of upcoming dates (Ex. <strong>Today</strong>, <strong>Tomorrow</strong>).</li>
+ <li>Organized upcoming dates with a horizontal scroll feature.</li>
+</ul>
+<p><strong>Potential Problems:</strong></p>
+<ul>
+ <li>Long group names might clutter the screen.</li>  
+ <li>The <strong>Add</strong> and <strong>Cancel</strong> icons might be difficult to see depending on their background image.</li> 
+</ul> 
+</div>
+</div>
+
+<div class="flex-container">
+ <div class="text">
+<h2 id="notifications">Notifications Page</h2>
+<p>Many reviewers agreed that Meetup sends <strong>a lot</strong> of notifications, but the notification page itself is a bore to visit. I decided to change that.</p>
+<ul>
+ <li>Added an interactive questionnaire to catch the user’s attention.</li>
+ <li>Listed potential groups that the user might be interested in and added a <strong>Create Group</strong><div class="add-svg"><img src="images/Create group.svg" alt="Create Group icon"></div> icon.</li>
+</ul>
+</div>
+<div><img src="images/Notifications zoom.png" alt="Notifications page mockup" class="mockup-img"><div class="caption"><p>Notifications Page Mockup</p></div></div>
+</div>
+
+
+
+<div class="Original">
+	<h2 id="originaldesign">Original Meetup UI</h2>
+	<img src="images/Meetup full.png" alt="Original meetup UI">
+</div>
+
+<div class="Original">
+	<h2 id="finaldesign">Final Redesign</h2>
+	<img src="images/Mockup full.png" alt="My final UI mockups">
+</div>
+</div>
+
+<div class="flex-container">
+ <div class="text">
+ <h2 id="reflections">Reflection</h2>
+<p><strong>When I started this project, I had two goals in mind:</strong></p>
+<ol>
+ <li>Become proficient in Sketch and Balsamiq.</li>
+ <li>Learn and apply the core principles of UI/UX design.</li>
+</ol>
+<p>
+	I've achieved the first goal and made progress on the second, but I have a long way to go until I can call myself a UI/UX designer. 
+</p>
+<p>
+	In the field of user experience design, every decision must be backed by user data and perfected with prototype testing. Unfortunately, this project does not meet that mark. The reviewers on the Apple App Store might not represent Meetup’s target demographic, so there's a chance that my UI redesigns are ill-informed.<br><strong>User tests are required to determine which interface&ndash;the redesign or the original&ndash;is preferred.</strong>
+</p>
+<p><strong>Next Steps:</strong></p>
+<ul>
+ <li>Develop a working prototype in Figma.</li>
+ <li>Interview local Meetup users and record them using the original app vs. my prototype.</li>
+ <li>Analyze the data, address user pain points, and continue tweaking the UI in Sketch until it's perfect.<br>
+ 	<small>(or until my 30-day free trial ends)</small></li>
+</ul>
+
+</div>
+</div>
+
+<p class="return-home"><a href="index.html"><strong>Return Home</strong></a></p>
+
+<footer>
+  <div class="footer">
+  	<small>&copy; Copyright <span id="year"></span> Stephanie Giori. <br>Coded by hand with &hearts;</small>
+  	 <div><a href="https://www.linkedin.com/in/sgiori119" target="_blank" title="Find me on LinkedIn"><i class="fab fa-linkedin"></i></a>
+     <a href="https://github.com/sgiori11" target="_blank" title="Find me on Github"><i class="fab fa-github"></i></a></div>
+ </div>
+</footer>
+
+<script async src="js/index.js"></script>
+</body>
+</html>
