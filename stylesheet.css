@@ -319,12 +319,12 @@ h1 {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
   padding: 0 0.25%;
-  justify-content: space-around;
   margin-top: 2%;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
   width: 540px;
+  
 }
 
 .column a{
@@ -365,6 +365,11 @@ h1 {
   width: 100%;
   max-width: 1400px;
   overflow: hidden;
+}
+
+#background {
+
+	background: black;
 }
 
 /* Responsive layout - makes a two column-layout instead of three columns */
@@ -798,5 +803,7 @@ h1 {
 	 .Original img {
 	 	width: 100%;
 	 }
+
 } 
+
 
