@@ -12,6 +12,28 @@ function myFunction() {
 //Copyright Date Function
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
+//Hide Designs on Mobile
+function myDesigns() {
+  var div = document.getElementById("myDesigns");
+  if (div.style.display === "none") {
+    div.style.display = "block"
+  } else {
+    div.style.display = "none"
+  }
+
+}
+
+//Hide Writing on Mobile
+function myWriting() {
+  var div = document.getElementById("myWriting");
+  if (div.style.display === "none") {
+    div.style.display = "block"
+  } else {
+    div.style.display = "none"
+  }
+
+}
+
 //Meetup case study scroll bar (originally from w3 schools)
 window.onscroll = function() {myScrollBar()};
 

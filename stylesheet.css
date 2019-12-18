@@ -103,8 +103,20 @@ body p {
     position: -webkit-sticky;
     top: 0;
     z-index: 999;
+  }
 
+  .design h2:hover, .writing h2:hover {
+  	color: black;
 
+  }
+
+  #myDesigns {
+  	display: none;
+
+  }
+
+  #myWriting {
+  	display: none;
   }
 }
 
@@ -248,26 +260,22 @@ h1 {
 
 }
 
-.design {
-	padding: 0;
-}
-
 .design h2 { 
 
 	margin-top: 15vh;
-	color: #C83C92;
+	color: #8F8F8F;
 	background-color: white;
 	font-size: calc(16px + 4vw);
 	font-weight: 700;
-	border-bottom: solid;
-	border-width: 0.3rem;
-	border-color: #21041f;
+	border-bottom-style: solid;
+	border-width: 0.2rem;
+	border-color: #d6d6d6; 
+	margin-right: 20%;
+	margin-left: 20%;
+	letter-spacing: 0.4rem;
+	padding-left: 0.4rem;
 	display: flex;
-	text-align: center;
 	justify-content: center;
-	margin-right: 30%;
-	margin-left: 30%;
-	padding: 1% 1% 0.5% 1%;
 	text-transform: uppercase;
 	
  }
@@ -281,27 +289,30 @@ h1 {
 	padding: 0;
 }
 
+
+
  .writing h2 {
 
-	color: #C83C92;
+	color: #8F8F8F;
 	background-color: white;
 	font-size: calc(16px + 4vw);
 	font-weight: 700;
-	border-bottom: solid;
-	border-width: 0.3rem;
-	border-color: #21041f;
+	border-bottom-style: solid;
+	border-width: 0.2rem;
+	border-color: #d6d6d6; 
+	margin-right: 20%;
+	margin-left: 20%;
+	letter-spacing: 0.4rem;
+	padding-left: 0.4rem;
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	margin-right: 30%;
-	margin-left: 30%;
-	padding: 1% 1% 0.5% 1%;
 	text-transform: uppercase;
  
  }
 
 
-.row {
+ .row {
 
   position: relative;
   text-align: center;
@@ -333,9 +344,11 @@ h1 {
 }
 
 .wrap {
-	border: solid black;
-	border-width: 2px;
-	background-color: white; 
+	border: solid #ededed; 
+	border-radius: 1%;
+	border-width: 0.16rem; 
+	background-color: #fafafa; 
+	background
 	padding-bottom: 2%;
 	
 }
@@ -372,12 +385,15 @@ h1 {
 	background: black;
 }
 
-/* Responsive layout - makes a two column-layout instead of three columns */
+
 @media screen and (max-width: 900px) {
   .column {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 100%;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 }
 
@@ -388,6 +404,8 @@ h1 {
     flex: 100%;
     max-width: 100%;
     margin-bottom: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 }
 
@@ -476,7 +494,7 @@ h1 {
 
 .tag::after {
 
-  background: white;
+  background: #fafafa;
   border-bottom: 13px solid transparent;
   border-left: 10px solid #eee;
   border-top: 13px solid transparent;
@@ -485,6 +503,11 @@ h1 {
   right: 0;
   top: 0;
 }
+
+.click-here {
+	text-decoration: underline !important;
+}
+
 
 .about-body {
 
