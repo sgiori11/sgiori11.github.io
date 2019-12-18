@@ -15,7 +15,7 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 //Hide Designs on Mobile
 function myDesigns() {
   var div = document.getElementById("myDesigns");
-  if (div.style.display === "none") {
+  if (div.style.display != "block") {
     div.style.display = "block"
   } else {
     div.style.display = "none"
@@ -26,7 +26,7 @@ function myDesigns() {
 //Hide Writing on Mobile
 function myWriting() {
   var div = document.getElementById("myWriting");
-  if (div.style.display === "none") {
+  if (div.style.display != "block") {
     div.style.display = "block"
   } else {
     div.style.display = "none"
