@@ -336,7 +336,7 @@ h1 {
 }
 
 .wrap {
-	border: 1px solid transparent;/* you may tune individually border-size to get your 15px */
+	border: 1px solid transparent;
     border-radius: 3%;
 	background-color: #f7f7f7; /* #fafafa; */
 	padding-bottom: 2%;
@@ -458,7 +458,7 @@ h1 {
 
 .tag {
 
-  background: #eee; */
+  background: #eee; 
   border-radius: 3px 0 0 3px;
   color:  #999; 
   display: inline-block;
@@ -539,7 +539,7 @@ h1 {
 
 	padding: 1% 2% 1% 2%;
 	background-color: #f5f5f5;
-	display: block; /* keeps linkedin circle even */
+	display: block; 
 	text-align: center;
 	text-decoration: none;
 	margin-top: 5%;
