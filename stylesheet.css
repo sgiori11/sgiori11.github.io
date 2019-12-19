@@ -110,10 +110,6 @@ body p {
 
   }
 
-  h1 {
-  	font-size: 80vw; 
-  }
-
   #myDesigns {
   	display: none;
 
@@ -144,17 +140,6 @@ body p {
 	justify-content: space-around;
 
 }
-
-
-/*.typewriter {
-
-	display: inline-flex;
-	flex-wrap: wrap;
-	text-transform: lowercase;
-    font-family: Courier, monospace;
-    font-size: calc(20px + 1.5vw);
-   	font-weight: 0;
-    color: #7E8894; /*#8F8F8F; */
     
 
 
@@ -162,7 +147,7 @@ h1 {
 
 	font-family: Courier, monospace;
 	color: #D361A7;/*#C83C92;/* #D361A7; */
-	font-size: calc(30px + 1.5vw); 
+	font-size: calc(25px + 1.5vw); 
 	font-weight: 100;
 	margin-bottom: 0;
 
