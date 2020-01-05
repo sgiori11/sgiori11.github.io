@@ -23,6 +23,7 @@ body p {
 .topnav {
   
   background-color: white;
+  opacity: 0.95;
   overflow: hidden;
   position: sticky;
   position: -webkit-sticky;
@@ -49,7 +50,7 @@ body p {
  .topnav a:hover {
 
   background-color: white;
-  color: #4D4D4D;
+  color: #C83C92;
 
 
 }
