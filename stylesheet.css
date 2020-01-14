@@ -608,6 +608,10 @@ h1 {
   padding-top: 15%;
 }
 
+.home-decoration {
+	margin-left: 2%;
+}
+
 .back-arrow {
   margin: 5% 0 0 5%;
   height: calc(10px + 1.5vw);
@@ -735,6 +739,7 @@ h1 {
 .Original h2 {
 
 	margin-bottom: 5%;
+	color: #a9a9a9;
 }
 
 .Original img {
