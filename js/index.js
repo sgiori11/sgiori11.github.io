@@ -1,12 +1,10 @@
-//Responsive Navbar
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+
+//Responsive Nav Bar and Nav Icon 
+document.querySelector("#nav-icon")
+.addEventListener("click", function() {
+    this.classList.toggle("active");
+    document.querySelector("ul").classList.toggle("show-menu");
+  });
 
 
 //Copyright Date Function
