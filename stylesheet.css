@@ -37,8 +37,7 @@ body p {
 
 
 .topnav li  {
-
-  margin: 1% 1.5% 0% 1%;
+  margin: 0;
   text-decoration: none;
   font-size: 1em;
 
@@ -119,7 +118,7 @@ body p {
 
 
 .topnav li {
-  margin: 2%;
+  margin: 1% 2.5% 1% 0;
 }
 
 .topnav a {
@@ -183,10 +182,11 @@ body p {
   flex-direction: row;
   justify-content: flex-end;
   color: black;
-  padding: 0 0.5rem 0.5rem 0.5rem;
+  padding: 0 0.5rem 0 0.5rem;
   font-size: calc(16px + 0.5vw);
   text-decoration: none;
   list-style-type: none;
+  margin: 0;
  
 }
 

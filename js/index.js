@@ -1,12 +1,4 @@
 
-//Responsive Nav Bar and Nav Icon 
-document.querySelector("#nav-icon")
-.addEventListener("click", function() {
-    this.classList.toggle("active");
-    document.querySelector("ul").classList.toggle("show-menu");
-  });
-
-
 //Copyright Date Function
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
@@ -52,3 +44,11 @@ function myPicture() {
     document.getElementById("demo").style.background = "#FFF";
 }
 }
+
+//Responsive Nav Bar and Nav Icon 
+//Must be below the Meetup case study JS because the case study does not have a #nav-icon!
+document.querySelector("#nav-icon")
+.addEventListener("click", function() {
+    this.classList.toggle("active");
+    document.querySelector("ul").classList.toggle("show-menu");
+  });
