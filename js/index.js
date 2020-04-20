@@ -2,28 +2,6 @@
 //Copyright Date Function
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
-//Hide Designs on Mobile
-function myDesigns() {
-  var div = document.getElementById("myDesigns");
-  if (div.style.display != "block") {
-    div.style.display = "block"
-  } else {
-    div.style.display = "none"
-  }
-
-}
-
-//Hide Writing on Mobile
-function myWriting() {
-  var div = document.getElementById("myWriting");
-  if (div.style.display != "block") {
-    div.style.display = "block"
-  } else {
-    div.style.display = "none"
-  }
-
-}
-
 //Meetup case study scroll bar (originally from w3 schools)
 window.onscroll = function() {myScrollBar()};
 
@@ -33,6 +11,7 @@ function myScrollBar() {
   var scrolled = (winScroll / height) * 100;
  document.getElementById("myBar").style.width = scrolled + "%";
 }
+
 
 //Change background color of Northern Lights img.
 function myPicture() { 
@@ -45,6 +24,7 @@ function myPicture() {
 }
 }
 
+
 //Responsive Nav Bar and Nav Icon 
 //Must be below the Meetup case study JS because the case study does not have a #nav-icon!
 document.querySelector("#nav-icon")
@@ -52,3 +32,76 @@ document.querySelector("#nav-icon")
     this.classList.toggle("active");
     document.querySelector("ul").classList.toggle("show-menu");
   });
+
+
+
+
+let labels = document.getElementsByClassName("tab");
+
+for (let i = 0; i < labels.length; i++) {
+  labels[i].addEventListener('click', selectLabel);
+}
+
+function selectLabel() {
+  let contentLabel = document.querySelector('label[for="content"]');
+  let designLabel = document.querySelector('label[for="designs"]');
+  let codeLabel = document.querySelector('label[for="code"]');
+
+  if (this == contentLabel) {
+    contentLabel.classList.add('selected-label');
+    designLabel.classList.remove('selected-label');
+    codeLabel.classList.remove('selected-label');
+
+  }
+
+  else if (this == designLabel) { 
+    contentLabel.classList.remove('selected-label');
+    designLabel.classList.add('selected-label');
+    codeLabel.classList.remove('selected-label');
+  }
+
+  else {
+    contentLabel.classList.remove('selected-label');
+    designLabel.classList.remove('selected-label');
+    codeLabel.classList.add('selected-label');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,7 +5,8 @@ title {
 
 body {
 
-	font-family: 'Montserrat', sans-serif;
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: Georgia, Times, "Times New Roman", serif;
 	background-color: white;
 	box-sizing: border-box;
 	margin: 0;
@@ -14,7 +15,7 @@ body {
 }
 
 body p {
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 
@@ -50,14 +51,14 @@ body p {
 
  .topnav a:hover {
   background-color: white;
-  color: #C83C92;
+  color: #9B0266;
 
 }
 
 .topnav a.active {
 
 	background-color: white;
-    color: #C83C92;
+    color: #9B0266;
     /* border-bottom: 0.15rem solid black; */
 }
 
@@ -79,7 +80,7 @@ body p {
 
   #nav-icon span, #nav-icon span:before, 
   #nav-icon span:after {
-  	background: #D31FA4;
+  	background: #9B0266;
   	border-radius: 5px;
   	width: 2.5em;
   	height: 6px;
@@ -127,12 +128,12 @@ body p {
 }
 
 .topnav a:hover {
-  color: #C83C92;
+  color: #9B0266;
 }
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 955px) {
   
   #nav-icon {
   	margin: 1% 1%;
@@ -157,23 +158,24 @@ body p {
   	z-index: 999;
   }
 
-  .design h2:hover, .writing h2:hover {
-  	color: black;
-
-  }
-
-  #myDesigns {
-  	display: none;
-
-  }
-
-  #myWriting {
-  	display: none;
-  }
-
 }
 
-@media screen and (min-width: 701px) {
+
+@media screen and (max-width: 700px) {
+
+	.tabs {
+   transform: scale(0.8);
+ }
+}
+
+@media screen and (max-width: 400px) {
+
+	.tabs {
+   transform: scale(0.6);
+ }
+}
+
+@media screen and (min-width: 956px) {
   
   .topnav ul {
   
@@ -187,7 +189,6 @@ body p {
   text-decoration: none;
   list-style-type: none;
   margin: 0;
- 
 }
 
   
@@ -210,7 +211,7 @@ body p {
 
 	text-transform: lowercase;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 
 }
     
@@ -218,9 +219,10 @@ body p {
 
 h1 {
 
-	font-family: Courier, monospace;
-	color: #D361A7;/*#C83C92;/* #D361A7; */
-	font-size: calc(25px + 1.5vw); 
+	font-family: Georgia, Times, "Times New Roman", serif;
+	/* font-family: Courier, monospace; */
+	color: #9B0266;/* #D361A7;/*#C83C92;/* #D361A7; */
+	font-size: calc(38px + 1.5vw); 
 	font-weight: 100;
 	margin-bottom: 0;
 
@@ -229,7 +231,7 @@ h1 {
 
 .p1 {
 
-	font-family: Courier, monospace;
+	font-family: Georgia, Times, "Times New Roman", serif;
     font-size: calc(16px + 1.5vw);
 	color: #7E8894;
 	display: inline-flex;
@@ -239,7 +241,7 @@ h1 {
 
 .p2 {
 
-	font-family: Courier, monospace;
+	font-family: Georgia, Times, "Times New Roman", serif;
     font-size: calc(16px + 1.5vw);
 	color: #7E8894;
 	display: inline-flex;
@@ -249,7 +251,7 @@ h1 {
 
 .p3 {	
 
-	font-family: Courier, monospace;
+	font-family: Georgia, Times, "Times New Roman", serif;
     font-size: calc(16px + 1.5vw);
 	color: #7E8894;
 	display: inline-flex;
@@ -261,22 +263,11 @@ h1 {
         max-width: 100%;
         opacity: 0;
 	}
-	25% {
+	
+	50% {
 		max-width: 100%;
-		opacity: 25%;
+        opacity: 0;
 	}
-
-	50% { 
-		opacity: 0;
-		max-width: 100%;
-		
-	}
-
-	100% {
-		opacity: 1;
-		max-width: 100%;
-		
-  }  
 }
  
 .arrow {
@@ -317,64 +308,55 @@ h1 {
 }
 }
 
-/* @media screen and (max-width: 700px) {
-	.banner h1 {margin-left: 5%;}
-	.typewriter p {margin-left: 1%;}
-	
-} */
 
-.designpadding {
-	background-color: white;
-	width: 100%;
-
+.tab-container {
+  background: white;
+  margin: 11% 0 5% 0;
+  display: flex;
+  justify-content: center;
+  
 }
 
-.design h2 { 
+.tabs {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 0.5rem;
+  border: 2px solid #EFEFEF;
+  border-radius: 40px;
 
-	margin-top: 15vh;
-	color: #8F8F8F;
-	background-color: white;
-	font-size: calc(16px + 4vw);
-	font-weight: 400;
-	border-bottom: solid #D361A7 0.13rem; 
-	margin-right: 20%;
-	margin-left: 20%;
-	letter-spacing: 0.4rem;
-	padding-left: 0.4rem;
-	display: flex;
-	justify-content: center;
-	text-transform: uppercase;
-	
- }
-
-.writingpadding {
-	background-color: white;
-	margin-top: 12%;
-}
-
-.writing {
-	padding: 0;
-}
-
-
-
- .writing h2 {
-
-	color: #8F8F8F;
-	background-color: white;
-	font-size: calc(16px + 4vw);
-	font-weight: 400;
-	border-bottom: solid #D361A7 0.13rem;
-	margin-right: 20%;
-	margin-left: 20%;
-	letter-spacing: 0.4rem;
-	padding-left: 0.4rem;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	text-transform: uppercase;
  
- }
+
+}
+
+.tab {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 40px;
+	width: 150px;
+	height: 44px;
+	cursor: pointer;
+	color: black;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+
+
+.rad, .hidden {
+	display: none;
+}
+
+.rad:checked + .hidden {
+	display: block;
+}   
+
+.selected-label {
+	background: #FDEAF6;
+	color: #9B0266;
+    transition: background 0.2s;
+}
 
 
  .row {
@@ -403,6 +385,19 @@ h1 {
   
 }
 
+.code-column {
+ 
+  flex: 40%;
+  padding: 0 0.5%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 540px;
+  
+
+}
+
 .column a{
 
 	text-decoration: none;
@@ -411,7 +406,7 @@ h1 {
 .wrap {
 	border: 1px solid transparent;
     border-radius: 3%;
-	background-color: #f7f7f7; /* #fafafa; */
+	background-color: white;/*#f7f7f7; /* #fafafa; */
 	padding-bottom: 2%;
 	
 }
@@ -462,7 +457,7 @@ h1 {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .column {
+  .column, .code-column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
@@ -484,8 +479,8 @@ h1 {
   display: block;
   color: black;
   text-align: left;
-  margin-left: 5%;
-  margin-right: 3%;
+  margin-left: 1%;
+  margin-right: 1%;
 
 } 
 
@@ -495,15 +490,18 @@ h1 {
 }
 
 .columntext h3 {
-
+  font-weight: 600;
   font-size: calc(18px + 0.5vw);
-  font-style: bold;
+  
 
 }
 
 .columntext h3:hover {
+	color: #9B0266;
+}
 
-	color: #C83C92;
+.code-h3 h3:hover {
+	color: black;
 }
 
 .columntext p {
@@ -515,7 +513,7 @@ h1 {
 
   list-style: none;
   list-style-type: none;
-  margin-left: 5%;
+  margin-left: 1%;
   overflow: hidden; 
   padding: 0;
 }
@@ -531,9 +529,10 @@ h1 {
 
 .tag {
 
-  background: #eee; 
+  background: #FFF3F3; 
   border-radius: 3px 0 0 3px;
-  color:  #999; 
+  color:  #9B0266;
+  font-size: 1.2em;
   display: inline-block;
   height: 26px;
   line-height: 26px;
@@ -557,10 +556,10 @@ h1 {
 
 .tag::after {
 
-  background: #f7f7f7;
-  border-bottom: 13px solid transparent;
-  border-left: 10px solid #eee;
-  border-top: 13px solid transparent;
+  background: #FFF3F3;
+  border-bottom: 13px solid white; 
+  border-left: 10px solid #FFF3F3;/*#eee; */
+  border-top: 13px solid white; 
   content: '';
   position: absolute;
   right: 0;
@@ -593,7 +592,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	font-family: Courier, monospace;
+	font-family: Georgia, Times, "Times New Roman", serif;
 	color: #C83C92;
 	letter-spacing: 0.05em;
 	font-size: calc(22px + 0.5vw);
