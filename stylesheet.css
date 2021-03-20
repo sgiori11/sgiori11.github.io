@@ -453,7 +453,7 @@ i.fab {
   
 #nav-icon {
  margin: 0;
- padding: 5px 5px 0 0;
+ padding: 0 0 0;
  display: flex;
  justify-content: flex-end;
  cursor: pointer;
@@ -527,6 +527,12 @@ i.fab {
   margin: 1em 0;
  }
 
+ h1 {
+  font-size: 35px;
+  padding: 10px 20px;
+ }
+
+
 
 .hero-section {
   justify-content: center;
@@ -545,12 +551,25 @@ i.fab {
     display: flex;
     flex-direction: column;
     flex-direction: column-reverse;
-    max-width: 80%;
+    max-width: 85%;
 
     }
 
+ .line-grow {
+   width: 20%;
+
+ }
+
+
+  span.pop-out {
+    display: block;
+    margin-top: 20px;
+  }
+
+
   .info h3 {
     margin-top: 75px;
+    font-size: 25px;
   }
 
   .info h3, .info p, .info span {
