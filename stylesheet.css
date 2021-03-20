@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: transparent;
+  height: 0px;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.nav li {
+  color: black;
+  font-size: 1em;
+  margin: 0 1.5em;
+}
+
+.nav li:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+#projects {
+  padding-top: 50px;
+  margin-top: 0;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://raw.githubusercontent.com/sgiori11/sgiori11.github.io/44d293ad3c87edb4ffa84b24505e20687f6062cd/images/asapargus.svg), 
+ 
+url(https://raw.githubusercontent.com/sgiori11/sgiori11.github.io/2ce87827a1fdb84b9af0701c2f90097e142b0785/images/zz%20plant.svg);
+  background-repeat: no-repeat;
+  background-position: 
+    top -80px left, 
+    bottom right -125px;
+  background-size: 300px;
+  
+}
+
+.hero-cont {
+  overflow: hidden;
+  margin-left: 13em;
+  margin-bottom: 9em;
+  width: 40%;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.hero-cont p {
+  animation: slide-up 2s ease;
+}
+
+.hero-cont div {
+  animation: slide-in 2s ease;
+}
+
+.CTA a {
+  font-style: italic;
+}
+
+a  {
+  
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  color: #202124;
+}
+
+.CTA {
+  padding-bottom: 10px;
+  background-image: url(https://raw.githubusercontent.com/sgiori11/sgiori11.github.io/a961b9bac3d1a7dec3ba220414ee117c22146805/images/Arrow%201.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left 10px;
+  transition: 0.3s ease;
+}
+
+.CTA:hover {
+  background-position: bottom left 20px;
+}
+
+h1 {
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 50px;
+  background: #202124;
+  display: inline;
+  padding: 10px 30px;
+}
+
+h3 {
+  color: black;
+  font-weight: 400;
+  font-size: 35px;
+  margin-top: 3px;
+}
+
+.pop-out {
+  margin-left: 15px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+
+.hero-cont p {
+  font-weight: 300;
+  font-size: 1.7em;
+  line-height: 40px;
+  margin-top: 40px;
+  letter-spacing: 2px;
+}
+
+span {
+  color: #1E47C0;
+}
+
+.projects {
+  margin-top: 300px;
+}
+
+.project-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info p span {
+  font-weight: 400;
+}
+
+.info p span:not(:first-child) {
+  margin-left: 10px;
+}
+
+
+.project-number {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.project-number {
+  margin-top: 300px;
+}
+
+.monstera {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.monstera-shelf {
+  width: 100%;
+  height: 300px;
+  background-image: url(https://raw.githubusercontent.com/sgiori11/sgiori11.github.io/f09ba16971085122845d5026d4ba91dec2c1beac/images/monstera%2090.svg);
+  background-repeat: no-repeat;
+  background-position: 
+    center right -80px;
+  background-size: 200px;
+  
+}
+
+
+
+.project-two {
+  margin-top: 100px;
+}
+
+.odd {
+  justify-content: flex-end;
+}
+
+.even {
+  justify-content: flex-start;
+}
+
+.project-number span {
+  color: black;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.line {
+  width: 0px;
+  height: 0px;
+  
+}
+
+.odd .line {
+  margin-left: 15px;
+}
+
+.even .line {
+  margin-right: 15px;
+}
+
+.line-grow {
+  width: 10%;
+  border: 2px solid #1E47C0;
+  transition: width 0.5s ease-out;
+  transition-delay: 0.5s;
+}
+
+.project {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 100px;
+  align-items: start;
+  max-width: 65%;
+  margin-top: 150px;
+}
+
+div.evens .info {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+div.evens .project-img {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.project-img {
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  filter: saturate(0);
+  transition: 1s ease;
+}
+
+.project-img img:hover {
+  filter: none;
+}
+
+.asparagus {
+  height: 200px;
+  width: 100%;
+  background-image: url(https://raw.githubusercontent.com/sgiori11/sgiori11.github.io/a8559431991e2d5e8b72664995b633c951faa3f4/images/Group%2015.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.pothos {
+  height: 200px;
+  width: 100%;
+  background-image: url(https://raw.githubusercontent.com/sgiori11/sgiori11.github.io/44d293ad3c87edb4ffa84b24505e20687f6062cd/images/pothoss.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 180px;
+  
+}
+
+.space {
+  height: 200px;
+  width: 100%;
+}
+
+.potted-plant {
+  height: 200px;
+  width: 100%;
+  background-image: url(https://raw.githubusercontent.com/sgiori11/sgiori11.github.io/44d293ad3c87edb4ffa84b24505e20687f6062cd/images/potted%20plant.svg);
+  background-repeat: no-repeat;
+  background-position: bottom -57px right;
+  background-size: 200px;
+}
+
+
+.tools {
+  padding: 150px 0;
+  background: #202124;
+}
+
+.tools h3 {
+  color: white;
+  text-align: center;
+  letter-spacing: 7px;
+  margin-bottom: 10px;
+}
+
+.underline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.underline span {
+  width: 15%;
+  height: 0px;
+  border: 2px solid #1E47C0;
+}
+
+.tools-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 10%;
+  row-gap: 5em;
+}
+
+.tools-div {
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  
+}
+
+.tools-div svg {
+  height: 70px;
+  margin-bottom: 10px;
+  filter: saturate(0);
+  
+}
+
+.tools-div p {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: white;
+}
+
+.about {
+  background-image: url(https://raw.githubusercontent.com/sgiori11/sgiori11.github.io/44d293ad3c87edb4ffa84b24505e20687f6062cd/images/paintbrush.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+  
+}
+
+.about h3 {
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.my-face {
+  width: 250px;
+  height: 250px;
+  background-image: url("images/my face.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0em 2em 2em 2em;
+  max-width: 60%;
+}
+
+.about .underline {
+  width: 40%;
+}
+
+.bio {
+  margin-top: 3em;
+}
+
+
+.footer {
+  background: #F1F1F1;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer small {
+  text-align: center;
+}
+
+.footer span {
+  color: black;
+}
+
+i.fab {
+  width: 30px;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  
+  .nav ul {
+    display: none;
+  }
+  
+#nav-icon {
+ margin: 0;
+ padding: 5px 5px 0 0;
+ display: flex;
+ justify-content: flex-end;
+ cursor: pointer;
+}
+
+#nav-icon span {
+  transition: 0.5s linear;
+}
+
+#nav-icon span, #nav-icon span:before, 
+#nav-icon span:after {
+  background: black;
+  border-radius: 5px;
+  width: 40px;
+  height: 4px;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+#nav-icon span:before {
+  margin-top: 15px;
+  transition: 0.3s linear;
+  content: '';
+}
+
+#nav-icon span:after {
+  margin-top: 30px;
+  transition: 0.3s linear;
+  content: '';
+}
+
+#nav-icon.active span {
+  background: transparent;
+  transition: 0.2s linear;
+}
+
+#nav-icon.active span:before {
+  transform: rotate(45deg);
+  transition: 0.3s linear;
+}
+
+#nav-icon.active span:after {
+  margin-top: 15px; 
+  transform: rotate(-45deg);
+  transition: 0.3s linear;
+}
+
+.nav ul { /*got it*/
+  display: none; 
+}
+
+.nav ul.show-menu {
+  background: white;
+  margin-top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav a {
+  font-size: 70px;
+ }
+
+ .nav li {
+  margin: 1em 0;
+ }
+
+
+.hero-section {
+  justify-content: center;
+  align-items: center;
+
+  }
+
+  .hero-cont { 
+     margin: 0;
+     width: 80%;
+ 
+    }
+
+   
+  .project {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    max-width: 80%;
+
+    }
+
+  .info h3 {
+    margin-top: 75px;
+  }
+
+  .info h3, .info p, .info span {
+    text-align: center;
+  }
+
+ .tools-cont {
+  grid-template-columns: 1fr;
+ }
+
+ .about .underline {
+  width: 90%;
+}
+
+ .about-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: auto;
+  max-width: none;
+ }
+
+.my-face {
+  box-shadow: none;
+  border: none;
+}
+
+
+.bio {
+  background-color: transparent;
+  width: auto;
+  margin: 3em;
+  padding: 0;
+  border: none;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
