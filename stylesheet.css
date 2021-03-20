@@ -525,7 +525,16 @@ i.fab {
 
  .nav li {
   margin: 1em 0;
+  padding: 0;
  }
+ 
+
+ .nav .fa-linkedin {
+  margin: 0;
+  padding: 0;
+  transform: translateX(-5px);
+ }
+
 
  h1 {
   font-size: 35px;
@@ -546,6 +555,9 @@ i.fab {
  
     }
 
+.projects {
+  margin-top: 150px;
+}
    
   .project {
     display: flex;
@@ -564,12 +576,13 @@ i.fab {
   span.pop-out {
     display: block;
     margin-top: 20px;
+    margin-left: 0;
   }
 
 
   .info h3 {
     margin-top: 75px;
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .info h3, .info p, .info span {
@@ -582,6 +595,10 @@ i.fab {
 
  .about .underline {
   width: 90%;
+}
+
+.about {
+  padding-bottom: 50px;
 }
 
  .about-cont {
