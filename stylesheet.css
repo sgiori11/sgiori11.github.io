@@ -34,6 +34,7 @@ body {
   color: black;
   font-size: 1em;
   margin: 0 1.5em;
+  letter-spacing: 2px;
 }
 
 .nav li:hover {
@@ -113,15 +114,15 @@ a  {
 }
 
 .CTA {
-  padding-bottom: 10px;
-  background-image: url(https://raw.githubusercontent.com/sgiori11/sgiori11.github.io/a961b9bac3d1a7dec3ba220414ee117c22146805/images/Arrow%201.svg);
+  padding-bottom: 15px;
+  background-image: url(https://raw.githubusercontent.com/sgiori11/sgiori11.github.io/d47662b6c20a977bda42b032d28ba258d310d03c/images/green%20arrow.svg);
   background-repeat: no-repeat;
-  background-position: bottom left 10px;
+  background-position: bottom left 15px;
   transition: 0.3s ease;
 }
 
 .CTA:hover {
-  background-position: bottom left 20px;
+  background-position: bottom left 25px;
 }
 
 h1 {
@@ -152,6 +153,11 @@ p {
   line-height: 1.5;
 }
 
+span {
+  color: #479D98;
+  /*#1E47C0;*/
+}
+
 
 .hero-cont p {
   font-weight: 300;
@@ -161,9 +167,10 @@ p {
   letter-spacing: 2px;
 }
 
-span {
-  color: #1E47C0;
+.hero-cont span {
+  font-weight: 300;
 }
+
 
 .projects {
   margin-top: 300px;
@@ -176,7 +183,7 @@ span {
 }
 
 .info p span {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .info p span:not(:first-child) {
@@ -246,7 +253,7 @@ span {
 
 .line-grow {
   width: 10%;
-  border: 2px solid #1E47C0;
+  border: 2px solid #479D98;/*#1E47C0;*/
   transition: width 0.5s ease-out;
   transition-delay: 0.5s;
 }
@@ -344,7 +351,7 @@ img {
 .underline span {
   width: 15%;
   height: 0px;
-  border: 2px solid #1E47C0;
+  border: 2px solid #479D98;
 }
 
 .tools-cont {
@@ -392,6 +399,10 @@ img {
   margin-bottom: 10px;
   text-align: center;
   letter-spacing: 5px;
+}
+
+.about span {
+  font-weight: 500;
 }
 
 .my-face {
