@@ -1,6 +1,4 @@
 # sgiori11.github.io
-Portfolio Website
+This was the codebase for my second-ever portfolio site, built in 2020. I like to think I've come a long way since writing plain HTML and vanilla JS!!
 
 
-<h1>Welcome To My Portfolio!</h1>
-<p>Version 2.0 features HTML, CSS, and vanilla Javascript.</p>  
